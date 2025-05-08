@@ -1,0 +1,90 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #2c2c2c;
+}
+
+.navbar {
+    background-color: #1a1a1a !important;
+}
+
+.form-control,
+.btn {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success {
+    color: #ccc;
+    border-color: #555;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: #198754;
+    color: #fff;
+}
+
+.logo-studyhub {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.text-muted {
+    color: #696969 !important;
+}
+
+.postagem-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.post-usuario {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.post-usuario small {
+    font-weight: normal;
+    color: #aaa;
+}
+
+.post-actions {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.post-actions i {
+    cursor: pointer;
+}
+
+.post-actions span:hover {
+    color: #1d9bf0;
+}
+
+.icon-share {
+    font-size: 1rem;
+}
