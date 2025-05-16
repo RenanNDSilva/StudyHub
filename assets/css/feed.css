@@ -3,6 +3,10 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .sidebar-link {
     display: flex;
     align-items: center;
