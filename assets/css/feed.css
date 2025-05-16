@@ -131,3 +131,12 @@ aside {
     background-color: #222;
     border-radius: 6px;
 }
+
+.comentario-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.comentarios-area .input-group-text {
+  cursor: default;
+}
