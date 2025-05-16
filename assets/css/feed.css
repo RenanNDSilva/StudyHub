@@ -1,6 +1,28 @@
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+    font-size: 1rem;
+}
+
+.sidebar-link:hover {
+    background-color: #222;
+    text-decoration: none;
+}
+
+.sidebar-logo {
+  max-width: 180px;
+  /* padding: 0 14px; */
+  margin-top: 20px;
+  margin-bottom: 20px !important;
 }
 
 .card {
@@ -87,4 +109,21 @@ body {
 
 .icon-share {
     font-size: 1rem;
+}
+
+#imagemPreview {
+  max-height: 350px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+aside {
+    border-right: 1px solid #333;
+}
+
+.nav-link:hover {
+    background-color: #222;
+    border-radius: 6px;
 }
