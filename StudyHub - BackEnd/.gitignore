@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtualenv
+venv/
+env/
+.venv/
+
+# Arquivos de log / temporários
+*.log
+*.sqlite3
+*.db
+.DS_Store
+
+# Arquivos de configuração de IDE (como VSCode ou PyCharm)
+.vscode/
+.idea/
+
+# Arquivos de configuração do sistema operacional
+Thumbs.db
+Desktop.ini
+
+# Arquivos de configuração de pacotes
+*.egg-info/
+*.eggs/
+dist/
+build/
+
+# Arquivos de dados (ex: arquivos de imagens ou PDFs)
+src/media/uploads/
+
+# Arquivos de ambiente
+.env
+*.env
+
+# Arquivos de testes temporários
+*.pytest_cache/

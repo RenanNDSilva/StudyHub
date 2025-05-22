@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyHub - Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/feed.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-2 d-none d-md-flex flex-column text-light p-3 sticky-top" style="height: 100vh;">
+        <img src="assets/img/logoStudyHub.png" alt="StudyHub" class="sidebar-logo mb-4">
+        <a href="#" class="sidebar-link text-light"><i class="bi bi-house-door fs-4"></i> <span>Página
+            inicial</span></a>
+        <a href="#" class="sidebar-link text-light"><i class="bi bi-search fs-4"></i> <span>Pesquisar</span></a>
+        <!-- <a href="#" class="sidebar-link text-light"><i class="bi bi-compass fs-4"></i> <span>Explorar</span></a> -->
+        <!-- <a href="#" class="sidebar-link text-light"><i class="bi bi-chat-dots fs-5"></i> <span>Mensagens</span></a> -->
+        <!-- <a href="#" class="sidebar-link text-light"><i class="bi bi-heart fs-5"></i> <span>Notificações</span></a> -->
+        <!-- <a href="#" class="sidebar-link text-light"><i class="bi bi-plus-square fs-5"></i> <span>Criar</span></a> -->
+        <a href="#" class="sidebar-link text-light"><i class="bi bi-person-circle fs-4"></i> <span>Perfil</span></a>
+      </aside>
+
+      <section class="col-12 col-md-7 col-lg-6 px-3 py-4 mx-auto">
+        <div class="card mb-4 bg-dark text-light border-0">
+          <div class="card-body p-3">
+            <form id="novaPostagem" class="position-relative">
+              <!-- Campo de texto -->
+              <textarea id="postInput" class="form-control bg-dark text-light border-secondary pe-5" rows="3"
+                placeholder="O que você está estudando hoje?" required></textarea>
+
+              <!-- Preview da imagem -->
+              <div id="imagemPreviewContainer" class="d-flex flex-wrap gap-2 mt-2"></div>
+
+              <!-- Ações -->
+              <div class="d-flex justify-content-end align-items-center gap-3 mt-2">
+                <label for="uploadArquivo" class="text-primary mb-0" style="cursor: pointer;">
+                  <i class="bi bi-paperclip fs-5"></i>
+                </label>
+                <input type="file" id="uploadArquivo" accept="image/*" class="d-none" multiple>
+                <button type="submit" class="btn btn-primary btn-sm">Publicar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="feedPosts"></div>
+        <div class="card mb-3 bg-dark text-light border-0">
+          <div class="card-body pb-1">
+            <div class="d-flex align-items-center mb-2">
+              <img src="assets/img/perfil.jpg" alt="Perfil" class="rounded-circle me-2" width="40" height="40">
+              <div class="post-usuario">
+                Renan Nascimento <small class="text-muted">· 14:42</small>
+              </div>
+            </div>
+            <p class="mb-2">Essa é uma postagem de exemplo no layout estilo Instagram com sidebar!</p>
+            <img src="assets/img/prova.jpeg" alt="imagem postada" class="img-fluid rounded postagem-img mb-2">
+            <div class="mt-3 d-flex justify-content-around post-actions">
+              <span><i class="bi bi-chat"></i> 0</span>
+              <span><i class="bi bi-heart"></i> 0</span>
+              <span><i class="bi bi-share"></i></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside id="mini-profile" class="col-lg-3 d-none d-lg-block text-light pt-4 pe-5">
+        <!-- PERFIL DO USUÁRIO -->
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <div class="d-flex align-items-center">
+            <img src="assets/img/perfil.jpg" alt="Perfil" class="rounded-circle me-2" width="48" height="48">
+            <div class="d-flex flex-column">
+              <strong class="text-light">renann.silva2003</strong>
+              <small class="text-muted">Renan Nascimento da Silva</small>
+            </div>
+          </div>
+          <a href="#" class="text-primary fw-semibold text-decoration-none">Mudar</a>
+        </div>
+
+        <!-- SUGESTÕES -->        <!-- <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted">Sugestões para você</span>
+          <a href="#" class="text-light text-decoration-none fw-semibold">Ver tudo</a>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center justify-content-between mb-2">
+            <div class="d-flex align-items-center">
+              <img src="" class="rounded-circle me-2" width="32" height="32">
+              <div class="d-flex flex-column">
+                <span class="text-light">@cauney_vitor</span>
+                <small class="text-muted">Seguido(a) por sabio864...</small>
+              </div>
+            </div>
+            <a href="#" class="text-primary fw-semibold text-decoration-none">Seguir</a>
+          </li>
+          <li class="d-flex align-items-center justify-content-between mb-2">
+            <div class="d-flex align-items-center">
+              <img src="" class="rounded-circle me-2" width="32" height="32">
+              <div class="d-flex flex-column">
+                <span class="text-light">@beatrizbrusadin</span>
+                <small class="text-muted">Seguido(a) por nidesimone...</small>
+              </div>
+            </div>
+            <a href="#" class="text-primary fw-semibold text-decoration-none">Seguir</a>
+          </li>
+        </ul>
+ -->
+      </aside>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalImagemExpandida" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-body p-0">
+          <img id="imagemExpandida" src="" class="img-fluid rounded mx-auto d-block"
+            style="max-height: 90vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/scripts/emoji-button-3.0.3.min.js"></script>
+  <script src="assets/scripts/feed.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+tortoise-orm
+python-jose
+passlib[bcrypt]
+pydantic
+python-multipart
+aiofiles
