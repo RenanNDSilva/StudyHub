@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudyHub - Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/feed.css"> 
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-2 d-none d-md-flex flex-column text-light p-3 sticky-top" style="height: 100vh;">
+                <img id="user-profile" src="assets/img/logoStudyHub.png" alt="Foto de Perfil" class="sidebar-logo mb-4">
+                <a href="index.html" class="sidebar-link text-light"><i class="bi bi-house-door fs-4"></i> Página
+                    inicial</a>
+                <a href="profile.html" class="sidebar-link text-light"><i class="bi bi-person fs-4"></i> Perfil</a>
+                <a href="#" class="sidebar-link text-light"><i class="bi bi-gear fs-4"></i> Configurações</a>
+            </aside>
+
+            <main class="col-md-10 p-4">
+                <div class="profile-header">
+                    <img id="profile-pic" src="assets/img/perfil.jpg" alt="Foto de Perfil" class="profile-pic">
+
+                    <div class="profile-info">
+                        <h2 id="profile-username">usuario_exemplo</h2>
+                        <div class="profile-stats">
+                            <span><strong id="post-count">0</strong> publicações</span>
+                            <span><strong id="followers-count">0</strong> seguidores</span>
+                            <span><strong id="following-count">0</strong> seguindo</span>
+                        </div>
+                        <p id="profile-description">Descrição do usuário...</p>
+                        <button class="btn btn-outline-secondary btn-sm">Editar perfil</button>
+                        <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-gear"></i></button>
+                    </div>
+                </div>
+
+                <div class="profile-nav">
+                    <a href="#">PUBLICAÇÕES</a>
+                    <a href="#">SALVOS</a>
+                    <a href="#">MARCADOS</a>
+                </div>
+
+                <div class="profile-content mt-4">
+                    <p>Compartilhar fotos quando quiser. Elas aparecerão aqui no perfil.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
