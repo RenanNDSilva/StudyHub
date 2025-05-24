@@ -1,8 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI # type: ignore
 from src.datalayer.dbconfig import configure_db
 from src.api.configuration import configure_routes
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware # type: ignore
+from fastapi.staticfiles import StaticFiles # type: ignore
 
 
 def create_app():

@@ -38,3 +38,14 @@ src/media/uploads/
 
 # Arquivos de testes temporários
 *.pytest_cache/
+
+# Ignorar ambiente virtual
+venv/
+
+# Ignorar banco de dados SQLite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Ignorar cache Python
+__pycache__/
